@@ -16,7 +16,6 @@ SET(DMCPPLINQ_VERSION "${DMCPPLINQ_VERSION_MAJOR}.${DMCPPLINQ_VERSION_MINOR}.${D
 MESSAGE(STATUS "VERSION: ${DMCPPLINQ_VERSION}")
 
 OPTION(USE_DMCPPLINQ "use dmcpplinq" OFF)
-CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/include/dmcpplinq_config.h.in ${CMAKE_CURRENT_SOURCE_DIR}/include/dmcpplinq_config.h)
 
 ModuleImportAll("thirdparty")
 LibImport("dmcpplinq_module" "src/dmcpplinq_module")
