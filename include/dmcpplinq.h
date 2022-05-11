@@ -22,18 +22,6 @@
 #ifndef __DMCPPLINQ_H_INCLUDE__
 #define __DMCPPLINQ_H_INCLUDE__
 
-#include "dmos.h"
+#include "cpplinq.h"
 
-class Idmcpplinq
-{
-public:
-    virtual ~Idmcpplinq(){}
-    virtual void DMAPI Release(void) = 0;
-	
-    virtual void DMAPI Test(void) = 0;
-};
-
-Idmcpplinq* DMAPI dmcpplinqGetModule();
-
-typedef Idmcpplinq* (DMAPI* PFN_dmcpplinqGetModule)();
 #endif // __DMCPPLINQ_H_INCLUDE__

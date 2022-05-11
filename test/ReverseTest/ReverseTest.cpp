@@ -1,6 +1,6 @@
 #include "gtest.h"
 
-#include "CppLinq.h"
+#include "dmcpplinq.h"
 #include "TestUtils.h"
 
 TEST(Reverse, IntVector)
