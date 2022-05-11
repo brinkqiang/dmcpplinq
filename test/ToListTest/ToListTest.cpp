@@ -5,10 +5,10 @@
 
 TEST(ToList, List2List)
 {
-	std::list<int> src = { 100, 200, 300 };
+    std::list<int> src = { 100, 200, 300 };
 
-	auto rng = CppLinq::From(src);
-	auto dst = rng.ToList();
+    auto rng = cpplinq::From(src);
+    auto dst = rng.ToList();
 
-	EXPECT_EQ(dst, src);
+    EXPECT_EQ(dst, src);
 }

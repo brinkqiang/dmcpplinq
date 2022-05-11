@@ -5,10 +5,10 @@
 
 TEST(ToDeque, Deque2Deque)
 {
-	std::deque<int> src = { 100, 200, 300 };
+    std::deque<int> src = { 100, 200, 300 };
 
-	auto rng = CppLinq::From(src);
-	auto dst = rng.ToDeque();
+    auto rng = cpplinq::From(src);
+    auto dst = rng.ToDeque();
 
-	EXPECT_EQ(dst, src);
+    EXPECT_EQ(dst, src);
 }

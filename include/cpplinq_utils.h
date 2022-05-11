@@ -11,7 +11,7 @@ void IsEqualArray(R dst, T(&ans)[N], F func)
         EXPECT_EQ(func(ans[i]), func(dst.NextObject()));
     }
 
-    EXPECT_THROW(dst.NextObject(), CppLinq::EnumeratorEndException);
+    EXPECT_THROW(dst.NextObject(), cpplinq::EnumeratorEndException);
 }
 
 template<typename R, typename T, unsigned N>
@@ -22,7 +22,7 @@ void IsEqualArray(R dst, T(&ans)[N])
         EXPECT_EQ(ans[i], dst.NextObject());
     }
 
-    EXPECT_THROW(dst.NextObject(), CppLinq::EnumeratorEndException);
+    EXPECT_THROW(dst.NextObject(), cpplinq::EnumeratorEndException);
 }
 
 #endif

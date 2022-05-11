@@ -28,7 +28,7 @@
 //	Account accounts[] = { {2, 10000}, {3, 20000}, {4, 30000} };
 //	PeopleAccount ans[] = { { 1, "Tom", NULL }, { 2, "Mike", 10000 }, { 3, "Susan", 20000 } };
 //
-//	CppLinq::LeftJoin(peoples, accounts,  [](People p, Account a) { return p.m_no == a.m_no; });
+//	cpplinq::LeftJoin(peoples, accounts,  [](People p, Account a) { return p.m_no == a.m_no; });
 //
 //	IsEqualArray(dst, ans);
 //}

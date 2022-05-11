@@ -5,14 +5,14 @@
 
 TEST(Contains, ThreeInts)
 {
-	std::vector<int> src = { 1, 2, 3 };
+    std::vector<int> src = { 1, 2, 3 };
 
-	auto rng = CppLinq::From(src);
+    auto rng = cpplinq::From(src);
 
-	EXPECT_TRUE(rng.Contains(1));
-	EXPECT_TRUE(rng.Contains(2));
-	EXPECT_TRUE(rng.Contains(3));
+    EXPECT_TRUE(rng.Contains(1));
+    EXPECT_TRUE(rng.Contains(2));
+    EXPECT_TRUE(rng.Contains(3));
 
-	EXPECT_FALSE(rng.Contains(0));
-	EXPECT_FALSE(rng.Contains(4));
+    EXPECT_FALSE(rng.Contains(0));
+    EXPECT_FALSE(rng.Contains(4));
 }

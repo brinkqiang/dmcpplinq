@@ -5,10 +5,10 @@
 
 TEST(ToVector, Vector2Vector)
 {
-	std::vector<int> src = { 100, 200, 300 };
+    std::vector<int> src = { 100, 200, 300 };
 
-	auto rng = CppLinq::From(src);
-	auto dst = rng.ToVector();
+    auto rng = cpplinq::From(src);
+    auto dst = rng.ToVector();
 
-	EXPECT_EQ(dst, src);
+    EXPECT_EQ(dst, src);
 }

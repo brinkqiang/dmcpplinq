@@ -8,7 +8,7 @@
 #include <iostream>
 #include <functional>
 
-namespace CppLinq
+namespace cpplinq
 {
     // Enumerator End Exception
     class EnumeratorEndException { };

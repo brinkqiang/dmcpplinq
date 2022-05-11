@@ -5,11 +5,11 @@
 
 TEST(OrderBy, RandomIntsWithDuplicates)
 {
-	int src[] = { 4, 5, 3, 1, 4, 2, 1, 4, 6 };
-	int ans[] = { 1, 1, 2, 3, 4, 4, 4, 5, 6 };
+    int src[] = { 4, 5, 3, 1, 4, 2, 1, 4, 6 };
+    int ans[] = { 1, 1, 2, 3, 4, 4, 4, 5, 6 };
 
-	auto rng = CppLinq::From(src);
-	auto dst = rng.OrderBy();
+    auto rng = cpplinq::From(src);
+    auto dst = rng.OrderBy();
 
-	IsEqualArray(dst, ans);
+    IsEqualArray(dst, ans);
 }

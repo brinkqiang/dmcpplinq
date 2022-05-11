@@ -5,11 +5,11 @@
 
 TEST(Reverse, IntVector)
 {
-	int src[] = { 1, 2, 3, 4 };
-	int ans[] = { 4, 3, 2, 1 };
+    int src[] = { 1, 2, 3, 4 };
+    int ans[] = { 4, 3, 2, 1 };
 
-	auto rng = CppLinq::From(src);
-	auto dst = rng.Reverse();
+    auto rng = cpplinq::From(src);
+    auto dst = rng.Reverse();
 
-	IsEqualArray(dst, ans);
+    IsEqualArray(dst, ans);
 }
