@@ -18,8 +18,8 @@ MESSAGE(STATUS "VERSION: ${DMCPPLINQ_VERSION}")
 OPTION(USE_DMCPPLINQ "use dmcpplinq" OFF)
 
 ModuleImportAll("thirdparty")
-LibImport("dmcpplinq_module" "src/dmcpplinq_module")
-ExeImport("test" "dmcpplinq_module")
+
+ExeImport("test" "dmtest")
 
 #ADD_CUSTOM_COMMAND(
 #TARGET dmcpplinqtest
