@@ -1,7 +1,7 @@
 #include "gtest.h"
 
 #include "dmcpplinq.h"
-#include "TestUtils.h"
+#include "cpplinq_utils.h"
 
 TEST(Distinct, Ints1to6)
 {

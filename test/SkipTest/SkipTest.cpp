@@ -1,7 +1,7 @@
 #include "gtest.h"
 
 #include "CppLinq.h"
-#include "TestUtils.h"
+#include "cpplinq_utils.h"
 
 TEST(Skip, ManyToMany)
 {
